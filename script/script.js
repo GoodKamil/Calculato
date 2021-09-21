@@ -84,9 +84,11 @@ btnNumbers.forEach(number => {
 btnOperations.forEach(operation => {
   operation.addEventListener('click', function () {
     textResult.textContent = '';
-    action = String(operation.textContent);
-    paragraph.textContent = sum ? `${sum}${action}` : `${value}${action}`;
-    flag = !flag;
+    if (value) {
+      action = String(operation.textContent);
+      paragraph.textContent = sum ? `${sum}${action}` : `${value}${action}`;
+      flag = !flag;
+    }
   });
 });
 
@@ -104,8 +106,8 @@ btnResult.addEventListener('click', function () {
 btnDelete.addEventListener('click', remove);
 
 btnBack.addEventListener('click', function () {
-  // const leng = textResult.textContent.length - 1;
   const texts = textResult.textContent;
-  console.log(texts);
   textResult.textContent = texts.slice(0, texts.length - 1);
+  value = Number(textResult.textContent);
+  flag ? firstNumber == value : (secondNumber = value);
 });
