@@ -246,21 +246,3 @@ body {
     padding: 3rem;
   }
 }
-
-/* @media (min-width: 1440px) and (orientation: landscape) {
-  .result__text {
-    font-size: 5rem;
-  }
-  .paragraph {
-    font-size: 3rem;
-  }
-
-  .calculator {
-    font-size: 5rem;
-  }
-
-  .calculator__delete,
-  .calculator__item {
-    padding: 3rem;
-  }
-} */
