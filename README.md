@@ -1,4 +1,4 @@
-# Calculator Kamil-Krawczak Tic-Tac-Toe
+# Calculator Kamil-Krawczak
 
 ## Technologies
 * HTML
