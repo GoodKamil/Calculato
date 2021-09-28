@@ -6,4 +6,4 @@
 * JavaScript
 
 ## Website 
-https://goodkamil.github.io/Calculato/
+https://goodkamil.github.io/Calculator/
