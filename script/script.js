@@ -29,7 +29,6 @@ function undo() {
   const helpfulVariable = textResult.textContent.slice(0, -1);
   textResult.textContent = helpfulVariable == 0 ? 0 : helpfulVariable;
   value = helpfulVariable;
-  console.log(value);
 }
 
 function condition(char) {
@@ -62,7 +61,6 @@ function equal() {
   condition(action);
   if (value == 0) return;
   else paragraph.textContent = `${helpfulVariable} ${action} ${value} =`;
-  console.log(helpfulVariable);
   value = '';
 }
 
@@ -77,8 +75,6 @@ btnOperations.forEach(operation => {
   operation.addEventListener('click', function () {
     action = operation.textContent;
     numberOperation.push(action);
-    console.log(numberOperation);
-
     if (result) {
       sum = condition(numberOperation[counter - 1]);
     } else {
